@@ -1,7 +1,9 @@
 !! .Xdefaults for Ubuntu
+! Author: Dragan Vujović <dvujovic@protonmail.ch>
+! File: ~/.xinitrc
+! License: GPLv3
 
 ! General font settings for Thunar, Emacs etc.
-
 Xft.antialias: true
 Xft.autohint: false
 Xft.dpi: 96
@@ -11,7 +13,6 @@ Xft.lcdfilter: lcddefault
 Xft.rgba: rgb
 
 ! Urxvt settings
-
 URxvt*font: xft: DejaVu Sans Mono:size=9:antialias=true:hinting=true
 URxvt*boldFont: xft: DejaVu Sans Mono:bold:size=9:antialias=true:hinting=true
 

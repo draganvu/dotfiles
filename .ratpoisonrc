@@ -1,6 +1,8 @@
-##------------------------------------------------------------
-## File: ~/.ratpoisonrc --- barebones ratpoison config file
-##------------------------------------------------------------
+##-------------------------------------------
+## File: ~/.ratpoisonrc --- ratpoison config
+## Author: Dragan Vujović <dvujovic@protonmail.ch>
+## License: GPLv3
+##-------------------------------------------
 
 # set ratpoison escape key
 escape C-z

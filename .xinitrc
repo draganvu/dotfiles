@@ -1,7 +1,7 @@
 #!/bin/sh
-#
-# ubuntu-barebones ~/.xinitrc
-#
+# Author: Dragan Vujović <dvujovic@protonmail.ch>
+# File: ~/.xinitrc
+# License: GPLv3
 # Executed by startx (run your window manager from here)
 
 if [ -d /etc/X11/xinit/xinitrc.d ]; then
@@ -14,6 +14,7 @@ fi
 # use capslock as second control key
 setxkbmap -option ctrl:nocaps
 
+# merge Xdefaults
 xrdb -merge .Xdefaults &
 
 # launch ratpoison wm with startx
