@@ -1,11 +1,20 @@
-##-------------------------------------------
+##--------------------------------------------------
 ## File: ~/.ratpoisonrc --- ratpoison config
 ## Author: Dragan Vujović <dvujovic@protonmail.ch>
 ## License: GPLv3
-##-------------------------------------------
+##--------------------------------------------------
+
+# launch polybar
+exec /home/dragan/.ratbar/bar.sh
 
 # set ratpoison escape key
 escape C-z
+
+# set appearance
+set font "Dejavu Sans Mono-10"
+set border 0
+set padding 0 18 0 0
+set winname class
 
 # 7 seconds for messages
 msgwait 7

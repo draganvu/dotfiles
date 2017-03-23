@@ -11,11 +11,17 @@ if [ -d /etc/X11/xinit/xinitrc.d ]; then
   unset f
 fi
 
+# set cursor
+xsetroot -cursor_name left_ptr
+
 # use capslock as second control key
 setxkbmap -option ctrl:nocaps
 
 # merge Xdefaults
 xrdb -merge .Xdefaults &
+
+# set wallpaper
+feh --bg-scale /home/dragan/wallpaper.jpg
 
 # launch ratpoison wm with startx
 exec /usr/bin/ratpoison
