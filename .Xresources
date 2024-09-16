@@ -1,0 +1,48 @@
+!! ~/.Xresources - URxvt configuration
+!!
+!! Author: Dragan Vujovic
+!! License: GNU GPL v3+
+!! URL: https://github.com/draganvu/dotfiles
+
+Xft.dpi: 96
+Xft.antialias: true
+Xft.rgba: rgb
+Xft.hinting: true
+Xft.hintstyle: hintfull
+Xft.autohint: false
+Xft.lcdfilter: lcddefault
+
+! Font settings
+URxvt.font: xft:DejaVu Sans Mono:size=14
+URxvt.boldFont: xft:DejaVu Sans Mono:bold:size=14
+URxvt.italicFont: xft:DejaVu Sans Mono:italic:size=14
+URxvt.letterSpace: -1
+
+! Behavior
+URxvt.scrollTtyOutput: false
+URxvt.scrollWithBuffer: frue
+URxvt.scrollTtyKeypress: true
+
+! UI Settings
+URxvt.geometry: 100x30
+URxvt.scrollBar: false
+URxvt.internalBorder: 5
+
+! Extensions
+URxvt.perl-ext-common: default,selection-to-clipboard,resize-font,pasta
+
+! Copy / Paste (Using Ctrl+c Ctrl+v)
+URxvt.keysym.C-c: perl:clipboard:copy
+URxvt.keysym.C-v: perl:pasta:paste
+
+! Emacs Copy / Paste (Using Meta+w Ctrl+y)
+URxvt.keysym.M-w: perl:clipboard:copy
+URxvt.keysym.C-y: perl:pasta:paste
+
+! Resize font size
+URxvt.keysym.C-minus: resize-font:smaller
+URxvt.keysym.C-plus: resize-font:bigger
+URxvt.keysym.C-0: resize-font:reset
+
+! Color scheme
+#include "/home/draganvu/.colors/zemun"
