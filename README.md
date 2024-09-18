@@ -6,7 +6,7 @@ Dotfiles for Ubuntu
 git clone https://github.com/draganvu/dotfiles
 cd dotfiles
 ./deploy.sh
-```bash
+```
 
 ## License
-GNU GPL 3.0+. See [License](LICENSE) for more details.
+GNU GPL-3.0 license. See [License file](LICENSE) for more details.
