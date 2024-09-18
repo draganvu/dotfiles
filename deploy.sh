@@ -1,6 +1,12 @@
 #!/usr/bin/env bash
-
+#
+# Author: Dragan Vujović <dvujovic@protonmail.ch>
+# License: GNU GPL v3+
+# URL: https://github.com/draganvu/dotfiles
+#
+#
 # Deploy script for setting up my dotfiles
+#
 
 echo "Preparing to deploy..."
 
@@ -17,13 +23,13 @@ mkdir -p "$FOLDER_COLORS"
 
 # Download files from Github to directories
 echo "Downloading files..."
-wget -O -P "$FOLDER_URXVT" "$GITHUB_URL/.urxvt/ext/pasta"
-wget -O -P "$FOLDER_URXVT" "$GITHUB_URL/.urxvt/ext/resize-font"
-wget -O -P "$FOLDER_COLORS" "$GITHUB_URL/.colors/zemun"
+wget -O "$FOLDER_URXVT/pasta" "$GITHUB_URL/.urxvt/ext/pasta"
+wget -O "$FOLDER_URXVT/resize-font" "$GITHUB_URL/.urxvt/ext/resize-font"
+wget -O "$FOLDER_COLORS/zemun" "$GITHUB_URL/.colors/zemun"
 
 # Download files from Github to ~/$HOME
-wget -O -P "$HOME" "$GITHUB_URL/.Xresources"
-wget -O -P "$HOME" "$GITHUB_URL/.gitconfig"
+wget -O "$HOME/.Xresources" "$GITHUB_URL/.Xresources"
+wget -O "$HOME/.gitconfig" "$GITHUB_URL/.gitconfig"
 
 xrdb ~/.Xresources
 
