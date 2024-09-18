@@ -4,7 +4,7 @@
 # License: GNU GPL v3+
 # URL: https://github.com/draganvu/dotfiles
 #
-#
+# Commentary:
 # Deploy script for setting up my dotfiles
 #
 
@@ -14,7 +14,7 @@ echo "Preparing to deploy..."
 FOLDER_URXVT="$HOME/.urxvt/ext"
 FOLDER_COLORS="$HOME/.colors"
 
-GITHUB_URL="https://raw.githubusercontent.com/draganvu/dotfiles/master/"
+GITHUB_URL="https://raw.githubusercontent.com/draganvu/dotfiles/master"
 
 # Create directory
 echo "Creating directories..."
