@@ -1,5 +1,5 @@
 # dotfiles
-Dotfiles for Ubuntu
+Dotfiles for Ubuntu 24.04.
 
 ## Deploy
 ```bash
