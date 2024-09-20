@@ -13,6 +13,7 @@ echo "Preparing to deploy..."
 # Set variables
 FOLDER_URXVT="$HOME/.urxvt/ext"
 FOLDER_COLORS="$HOME/.colors"
+FOLDER_ICON="$HOME/.local/share/applications"
 
 GITHUB_URL="https://raw.githubusercontent.com/draganvu/dotfiles/master"
 
@@ -20,12 +21,14 @@ GITHUB_URL="https://raw.githubusercontent.com/draganvu/dotfiles/master"
 echo "Creating directories..."
 mkdir -p "$FOLDER_URXVT"
 mkdir -p "$FOLDER_COLORS"
+mkdir -p "$FOLDER_ICON"
 
 # Download files from Github to directories
 echo "Downloading files..."
 wget -O "$FOLDER_URXVT/pasta" "$GITHUB_URL/.urxvt/ext/pasta"
 wget -O "$FOLDER_URXVT/resize-font" "$GITHUB_URL/.urxvt/ext/resize-font"
 wget -O "$FOLDER_COLORS/zemun" "$GITHUB_URL/.colors/zemun"
+wget -O "$FOLDER_ICON/rxvt-unicode.desktop" "$GITHUB_URL/.urxvt/rxvt-unicode.desktop"
 
 # Download files from Github to ~/$HOME
 wget -O "$HOME/.Xresources" "$GITHUB_URL/.Xresources"
