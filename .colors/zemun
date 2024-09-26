@@ -6,10 +6,10 @@
 ! URL: https://github.com/draganvu/dotfiles
 ! -------------------------------------------------
 
-URxvt*background: #3F3F3F
-URxvt*foreground: #DCDCCC
-URxvt*cursorColor: #DCDCCC
-URxvt*cursorColor2: #3F3F3F
+URxvt*background: #3C3C3C
+URxvt*foreground: #FFF0F0
+URxvt*cursorColor: #DADADA
+URxvt*cursorColor2: #3C3C3C
 URxvt*colorUL: #8CD0D3
 URxvt*underlineColor: #F0DFAF
 URxvt*colorBD: #E0CF9F
@@ -19,17 +19,17 @@ URxvt*colorIT: #656555
 URxvt*color0: #3F3F3F
 URxvt*color8: #5F5F5F
 !! red dark/light
-URxvt*color1: #BC8383
-URxvt*color9: #CC9393
+URxvt*color1: #E47880
+URxvt*color9: #e47880
 !! green dark/light
 URxvt*color2: #5F7F5F
-URxvt*color10: #7F9F7F
+URxvt*color10: #9FC581
 !! yellow dark/light
 URxvt*color3: #E0CF9F
 URxvt*color11: #F0DFAF
 !! blue dark/light
 URxvt*color4: #7CB8BB
-URxvt*color12: #8CD0D3
+URxvt*color12: #8BC0FC
 !! magenta dark/light
 URxvt*color5: #DC8CC3
 URxvt*color13: #DC8CC3
@@ -38,4 +38,4 @@ URxvt*color6: #93E0E3
 URxvt*color14: #93E0E3
 !! white dark/light
 URxvt*color7: #DCDCCC
-URxvt*color15: #FFFFFF
+URxvt*color15: #FFF0F0
