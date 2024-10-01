@@ -20,11 +20,11 @@ sudo apt upgrade -y
 echo "Installing git..."
 sudo apt install -y git
 
-# Install Emacs editor
+# Install Emacs text editor
 echo "Installing Emacs..."
 sudo apt install -y emacs
 
-# Install graphic/image software
+# Install graphics/image editing software
 echo "Installing Inkscape..."
 sudo apt install -y inkscape
 echo "Installing GIMP..."
@@ -33,3 +33,13 @@ sudo apt install -y gimp
 # Install Terminal (Urxvt)
 echo "Installing Terminal..."
 sudo apt install -y rxvt-unicode
+
+# Install download tools
+echo "Installing curl, wget..."
+sudo apt install -y curl wget
+
+#Cleanup
+sudo apt autoremove -y
+
+# Finish message
+echo "Sofware installation completed!"
