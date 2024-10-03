@@ -19,11 +19,11 @@ URxvt*colorIT: #656555
 URxvt*color0: #3F3F3F
 URxvt*color8: #5F5F5F
 !! red dark/light
-URxvt*color1: #E47880
-URxvt*color9: #e47880
+URxvt*color1: #FF0000
+URxvt*color9: #FF0000
 !! green dark/light
-URxvt*color2: #5F7F5F
-URxvt*color10: #9FC581
+URxvt*color2: #9CBE7A
+URxvt*color10: #9CBE7A
 !! yellow dark/light
 URxvt*color3: #E0CF9F
 URxvt*color11: #F0DFAF
