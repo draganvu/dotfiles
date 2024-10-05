@@ -19,11 +19,23 @@ mkdir -p "$GIT_FOLDER"
 
 cd "$GIT_FOLDER"
 
-# Clone my projects from github.com
-echo "Cloning projects..."
-git clone https://github.com/draganvu/emacs-config
-git clone https://github.com/draganvu/draganvu.github.io
-git clone https://github.com/draganvu/cv-latex
+# Function to clone repostories
+clone_repo() {
+    REPO_URL=$1
+    REPO_NAME=$(basename "$REPO_URL" .git)
+
+    if [ -d "$REPO_NAME" ]; then
+	echo "$REPO_NAME already exists. Skipping..."
+    else
+	echo "Cloning $REPO_NAME..."
+	git clone "$REPO_URL"
+    fi
+}
+
+# Clone repositories
+clone_repo https://github.com/draganvu/emacs-config
+clone_repo https://github.com/draganvu/draganvu.github.io
+clone_repo https://github.com/draganvu/cv-latex
 
 echo "Clone complete!..."
 
