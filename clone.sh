@@ -33,6 +33,7 @@ clone_repo() {
 }
 
 # Clone repositories
+clone_repo https://github.com/draganvu/dotfiles
 clone_repo https://github.com/draganvu/emacs-config
 clone_repo https://github.com/draganvu/draganvu.github.io
 clone_repo https://github.com/draganvu/cv-latex
