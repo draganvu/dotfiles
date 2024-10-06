@@ -39,9 +39,9 @@ echo "Installing curl, wget..."
 sudo apt install -y curl wget
 
 # Install Solitaire card game
-sudo apt install aisleriot
+sudo apt install -y aisleriot
 
-#Cleanup
+# Cleanup
 sudo apt autoremove -y
 
 # Finish message
