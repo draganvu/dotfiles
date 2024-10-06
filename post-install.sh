@@ -38,6 +38,9 @@ sudo apt install -y rxvt-unicode
 echo "Installing curl, wget..."
 sudo apt install -y curl wget
 
+# Install Solitaire card game
+sudo apt install aisleriot
+
 #Cleanup
 sudo apt autoremove -y
 
